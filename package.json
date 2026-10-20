@@ -1,0 +1,15 @@
+{
+  "name": "supadata-notes-starter",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A tiny native-caption to Markdown starter using the official Supadata SDK",
+  "license": "MIT",
+  "engines": { "node": ">=22.9.0" },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env src/cli.mjs",
+    "demo": "node src/cli.mjs --demo",
+    "test": "node --test"
+  },
+  "dependencies": { "@supadata/js": "1.4.0" }
+}
