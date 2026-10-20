@@ -51,11 +51,11 @@ export function makeOutputs(transcript, url, secret = '') {
   const redact = value => secret ? value.split(secret).join('[REDACTED]') : value;
   const text = redact(segments.map(s=>s.text.trim()).join('\n'));
   const excerpts = segments.slice(0,3).map(s => {
-    const raw = s.text.trim();
+    const raw = redact(s.text.trim());
     return `- [${timestamp(s.offset)}] ${safeMarkdown(raw.slice(0,180))}${raw.length>180?'…':''}`;
   });
   const markdown = redact([
-    '# 视频学习笔记草稿', '', `来源：${url}`, `字幕语言：${safeMarkdown(String(transcript.lang ?? '未提供'))}`,
+    '# 视频学习笔记草稿', '', `来源：${url}`, `字幕语言：${safeMarkdown(redact(String(transcript.lang ?? '未提供')))}`,
     '', '## 字幕摘录', '',
     '以下仅为前三段字幕摘录，不代表视频重点，也不是 AI 摘要。', '', ...excerpts,
     '', '## 我的理解', '', '回看原视频后，用一句话写下主线。',
