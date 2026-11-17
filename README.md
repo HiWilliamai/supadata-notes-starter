@@ -1,5 +1,7 @@
 # Supadata Notes Starter
 
+<a href="https://supadata.ai/r/TPT219DS" rel="sponsored" target="_blank"><img src="https://supadata.ai/badge/powered-by-supadata-light.svg" alt="Powered by Supadata" width="232" height="54" /></a>
+
 一个简单的 Node.js 模板：**YouTube 链接 → Supadata 已有字幕 → Markdown 学习笔记草稿**。
 
 使用官方 [`@supadata/js`](https://github.com/supadata-ai/js)。只分享独立的小工具，不需要其他应用的代码或数据库。
