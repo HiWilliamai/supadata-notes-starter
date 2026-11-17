@@ -6,6 +6,8 @@
 
 使用官方 [`@supadata/js`](https://github.com/supadata-ai/js)。只分享独立的小工具，不需要其他应用的代码或数据库。
 
+[查看公开演示与截图](https://hiwilliamai.github.io/supadata-notes-starter/demo.html) · [查看离线输出预览](https://hiwilliamai.github.io/supadata-notes-starter/)
+
 ## 先试离线演示
 
 需要 Node.js 22.9 或更新版本。
